@@ -1,0 +1,2 @@
+/etc/modules.d/usb-net-smsc95xx
+/lib/modules/4.9.111/smsc95xx.ko

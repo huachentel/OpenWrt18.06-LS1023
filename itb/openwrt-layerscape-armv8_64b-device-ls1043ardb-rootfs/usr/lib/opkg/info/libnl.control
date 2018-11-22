@@ -1,0 +1,10 @@
+Package: libnl
+Version: 3.3.0-1
+Depends: libc, libssp, librt, libpthread, libnl-genl, libnl-route, libnl-nf
+Source: package/libs/libnl
+License: LGPL-2.1
+Section: libs
+Architecture: aarch64_generic
+Installed-Size: 105
+Description:  Socket handling, connection management, sending and receiving of data,
+ message construction and parsing, object caching system, etc.

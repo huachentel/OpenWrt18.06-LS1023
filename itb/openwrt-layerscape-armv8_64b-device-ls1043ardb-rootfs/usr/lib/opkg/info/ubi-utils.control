@@ -1,0 +1,10 @@
+Package: ubi-utils
+Version: 2.0.2-1
+Depends: libc, libssp, librt, libpthread
+Source: package/utils/mtd-utils
+License: GPLv2
+Section: utils
+Maintainer: John Crispin <john@phrozen.org>
+Architecture: aarch64_generic
+Installed-Size: 77675
+Description:  Utilities for manipulating memory technology devices.

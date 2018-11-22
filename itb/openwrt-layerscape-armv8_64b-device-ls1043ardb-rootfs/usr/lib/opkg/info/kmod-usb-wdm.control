@@ -1,0 +1,9 @@
+Package: kmod-usb-wdm
+Version: 4.9.111-1
+Depends: kernel (=4.9.111-1-1b6f118200b9e0574ffcad009b82d889), kmod-usb-core
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Architecture: aarch64_generic
+Installed-Size: 187
+Description:  USB Wireless Device Management support

@@ -1,0 +1,8 @@
+Package: layerscape-ppa-ls1043ardb
+Version: 2018-01-18-cd295be2-1
+Depends: libc, libssp, librt, libpthread
+Source: package/firmware/layerscape/ls-ppa
+Section: firmware
+Architecture: aarch64_generic
+Installed-Size: 105
+Description:  PPA firmware 2018-01-18-cd295be2 for NXP ls1043ardb 64b/32b Dev Board

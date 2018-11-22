@@ -1,0 +1,2 @@
+/etc/modules-boot.d/54-usb-dwc3
+/etc/modules.d/54-usb-dwc3

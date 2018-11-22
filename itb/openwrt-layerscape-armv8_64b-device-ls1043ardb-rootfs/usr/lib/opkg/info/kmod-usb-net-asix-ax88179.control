@@ -1,0 +1,10 @@
+Package: kmod-usb-net-asix-ax88179
+Version: 4.9.111-1
+Depends: kernel (=4.9.111-1-1b6f118200b9e0574ffcad009b82d889), kmod-libphy, kmod-usb-net
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Architecture: aarch64_generic
+Installed-Size: 203
+Description:  Kernel module for USB-to-Ethernet ASIX AX88179 based USB 3.0/2.0
+ to Gigabit Ethernet adapters.

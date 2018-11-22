@@ -1,0 +1,10 @@
+Package: nstat
+Version: 4.16.0-4
+Depends: libc, libssp, librt, libpthread, libnl-tiny
+Source: package/network/utils/iproute2
+License: GPL-2.0
+Section: net
+Maintainer: Russell Senior <russell@personaltelco.net>
+Architecture: aarch64_generic
+Installed-Size: 7713
+Description:  Network statistics utility

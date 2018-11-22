@@ -1,0 +1,11 @@
+Package: zlib
+Version: 1.2.11-2
+Depends: libc, libssp, librt, libpthread
+Source: package/libs/zlib
+License: Zlib
+LicenseFiles: README
+Section: libs
+Architecture: aarch64_generic
+Installed-Size: 40361
+Description:  zlib is a lossless data-compression library.
+ This package includes the shared library.

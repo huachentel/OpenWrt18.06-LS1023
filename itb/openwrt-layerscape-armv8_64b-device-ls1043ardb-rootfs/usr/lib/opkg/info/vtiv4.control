@@ -1,0 +1,10 @@
+Package: vtiv4
+Version: 1-2
+Depends: libc, libssp, librt, libpthread, kmod-ip-vti
+Source: package/network/config/vti
+License: GPL-2.0
+Section: net
+Maintainer: Andre Valentin <avalentin@marcant.net>
+Architecture: aarch64_generic
+Installed-Size: 105
+Description:  Virtual IPsec Tunnel Interface config support (IPv4) in /etc/config/network.

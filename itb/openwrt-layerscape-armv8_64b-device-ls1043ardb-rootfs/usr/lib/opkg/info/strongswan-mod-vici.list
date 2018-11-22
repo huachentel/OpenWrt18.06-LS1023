@@ -1,0 +1,4 @@
+/usr/lib/ipsec/plugins/libstrongswan-vici.so
+/usr/lib/ipsec/libvici.so.0.0.0
+/etc/strongswan.d/charon/vici.conf
+/usr/lib/ipsec/libvici.so.0

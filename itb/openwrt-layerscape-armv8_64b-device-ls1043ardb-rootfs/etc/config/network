@@ -1,0 +1,98 @@
+config interface 'loopback'
+	option ifname 'lo'
+	option proto 'static'
+	option ipaddr '127.0.0.1'
+	option netmask '255.0.0.0'
+
+config interface 'hcsrc'
+	option ifname 'veth_src_local'
+	option proto 'static'
+	option ipaddr '169.254.200.98'
+	option netmask '255.255.255.248'
+
+config interface 'hcdst'
+	option ifname 'veth_dst_local'
+	option proto 'static'
+	option ipaddr '169.254.200.99'
+	option netmask '255.255.255.248'
+
+config interface 'lan'
+	option type 'bridge'
+	option ifname 'eth0 wlan0'
+	option proto 'static'
+	option ipaddr '192.168.0.1'
+	option netmask '255.255.255.0'
+
+config interface 'wan1'
+	option ifname 'eth1'
+	option proto 'dhcp'
+	option metric '50'
+
+config interface 'lte'
+	option ifname 'usb0'
+	option proto 'dhcp'
+	option metric '40'
+	option ip4table 71
+
+config interface 'master'
+	option proto 'vti'
+	option mtu '1386'
+	option peeraddr '127.0.0.1'
+	option ipaddr '127.0.0.1'
+	option zone 'VPN'
+	option okey '100'
+	option ikey '100'
+	option name 'master'
+
+config interface 'slave'
+	option proto 'vti'
+	option mtu '1386'
+	option peeraddr '127.0.0.2'
+	option ipaddr '127.0.0.1'
+	option zone 'VPN'
+	option ikey '101'
+	option okey '101'
+
+config rule
+	option src   '169.254.200.1/32'
+	option lookup '80'
+	option priority '20'
+config rule
+	option src   '169.254.200.2/32'
+	option lookup '81'
+	option priority '21'
+
+config rule
+	option mark '82'
+	option lookup '82'
+	option priority '10'
+
+config rule
+	option out 'lte'
+	option lookup '71'
+	option priority '10'
+
+config 'route' 'hc_master_out'
+	option 'interface' 'master'
+	option 'target' '0.0.0.0'
+	option 'netmask' '0.0.0.0'
+	option 'table' 80
+
+config 'route' 'hc_slave_out'
+	option 'interface' 'slave'
+	option 'target' '0.0.0.0'
+	option 'netmask' '0.0.0.0'
+	option 'table' 81
+
+config 'route' 'hc_in_to_dst'
+	option 'interface' 'hcdst'
+	option 'target' '0.0.0.0'
+	option 'netmask' '0.0.0.0'
+	option 'gateway' '169.254.200.100'
+	option 'table' 82
+
+config 'route' 'hc_in_to_src'
+	option 'interface' 'hcsrc'
+	option 'target' '169.254.200.0'
+	option 'netmask' '255.255.255.248'
+	option 'gateway' '169.254.200.101'

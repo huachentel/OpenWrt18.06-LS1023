@@ -1,0 +1,10 @@
+Package: lsblk
+Version: 2.32-2
+Depends: libc, libssp, librt, libpthread, libblkid, libmount, libsmartcols
+Source: package/utils/util-linux
+License: GPL-2.0
+LicenseFiles: COPYING libblkid/COPYING libmount/COPYING Documentation/licenses/COPYING.GPLv2 Documentation/licenses/COPYING.LGPLv2.1 libuuid/COPYING Documentation/licenses/COPYING.BSD-3
+Section: utils
+Architecture: aarch64_generic
+Installed-Size: 25622
+Description:  lsblk lists information about all or the specified block devices

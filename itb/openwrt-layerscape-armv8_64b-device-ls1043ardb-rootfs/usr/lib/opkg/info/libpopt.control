@@ -1,0 +1,9 @@
+Package: libpopt
+Version: 1.16-1
+Depends: libc, libssp, librt, libpthread
+Source: package/libs/popt
+License: MIT
+Section: libs
+Architecture: aarch64_generic
+Installed-Size: 18124
+Description:  A command line option parsing library

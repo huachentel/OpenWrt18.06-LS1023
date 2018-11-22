@@ -1,0 +1,2 @@
+/etc/modules.d/usb-serial-xr_usb_serial_common
+/lib/modules/4.9.111/xr_usb_serial_common.ko

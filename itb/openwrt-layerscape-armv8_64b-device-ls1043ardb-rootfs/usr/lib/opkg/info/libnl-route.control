@@ -1,0 +1,9 @@
+Package: libnl-route
+Version: 3.3.0-1
+Depends: libc, libssp, librt, libpthread, libnl-core
+Source: package/libs/libnl
+License: LGPL-2.1
+Section: libs
+Architecture: aarch64_generic
+Installed-Size: 124118
+Description:  Routing Netlink Library Functions

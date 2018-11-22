@@ -1,0 +1,10 @@
+Package: libuclient
+Version: 2017-11-02-4b87d831-1
+Depends: libc, libssp, librt, libpthread, libubox
+Source: package/libs/uclient
+License: ISC
+Section: libs
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: aarch64_generic
+Installed-Size: 9746
+Description:  HTTP/1.1 client library

@@ -1,0 +1,9 @@
+Package: libnl-nf
+Version: 3.3.0-1
+Depends: libc, libssp, librt, libpthread, libnl-route
+Source: package/libs/libnl
+License: LGPL-2.1
+Section: libs
+Architecture: aarch64_generic
+Installed-Size: 24473
+Description:  Netfilter Netlink Library Functions

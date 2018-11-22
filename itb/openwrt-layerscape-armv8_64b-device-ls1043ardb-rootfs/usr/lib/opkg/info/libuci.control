@@ -1,0 +1,10 @@
+Package: libuci
+Version: 2018-03-24-5d2bf09e-1
+Depends: libc, libssp, librt, libpthread, libubox
+Source: package/system/uci
+License: LGPL-2.1
+Section: libs
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: aarch64_generic
+Installed-Size: 16120
+Description:  C library for the Unified Configuration Interface (UCI)

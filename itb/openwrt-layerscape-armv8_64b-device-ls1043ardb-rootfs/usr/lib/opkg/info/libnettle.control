@@ -1,0 +1,10 @@
+Package: libnettle
+Version: 3.3-1
+Depends: libc, libssp, librt, libpthread, libgmp
+Source: package/libs/nettle
+License: GPL-2.0+
+LicenseFiles: COPYING
+Section: libs
+Architecture: aarch64_generic
+Installed-Size: 231562
+Description:  GNU crypto library

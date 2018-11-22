@@ -1,0 +1,10 @@
+Package: tc
+Version: 4.16.0-4
+Depends: libc, libssp, librt, libpthread, kmod-sched-core
+Source: package/network/utils/iproute2
+License: GPL-2.0
+Section: net
+Maintainer: Russell Senior <russell@personaltelco.net>
+Architecture: aarch64_generic
+Installed-Size: 133356
+Description:  Traffic control utility

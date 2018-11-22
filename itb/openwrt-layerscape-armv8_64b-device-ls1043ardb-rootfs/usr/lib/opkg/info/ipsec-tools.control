@@ -1,0 +1,10 @@
+Package: ipsec-tools
+Version: 0.8.2-7
+Depends: libc, libssp, librt, libpthread, libopenssl, kmod-ipsec
+Source: feeds/packages/net/ipsec-tools
+License: BSD-3-Clause
+Section: net
+Maintainer: Noah Meyerhans <frodo@morgul.net>
+Architecture: aarch64_generic
+Installed-Size: 274585
+Description:  IPsec management tools

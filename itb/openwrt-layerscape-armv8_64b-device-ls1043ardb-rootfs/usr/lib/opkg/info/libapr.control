@@ -1,0 +1,10 @@
+Package: libapr
+Version: 1.6.2-1
+Depends: libc, libssp, librt, libpthread, libpthread, librt, libuuid
+Source: feeds/packages/libs/apr
+License: Apache License
+Section: libs
+Maintainer: Thomas Heil <heil@terminal-consulting.de>
+Architecture: aarch64_generic
+Installed-Size: 69359
+Description:  Apache Portable Runtime Library

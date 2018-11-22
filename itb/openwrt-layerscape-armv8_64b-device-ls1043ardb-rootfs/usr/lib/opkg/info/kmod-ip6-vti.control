@@ -1,0 +1,9 @@
+Package: kmod-ip6-vti
+Version: 4.9.111-1
+Depends: kernel (=4.9.111-1-1b6f118200b9e0574ffcad009b82d889), kmod-iptunnel, kmod-ip6-tunnel, kmod-ipsec6
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Architecture: aarch64_generic
+Installed-Size: 6907
+Description:  Kernel modules for IPv6 VTI (Virtual Tunnel Interface)

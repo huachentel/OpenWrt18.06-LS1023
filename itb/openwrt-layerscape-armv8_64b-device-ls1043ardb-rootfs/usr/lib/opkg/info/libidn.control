@@ -1,0 +1,16 @@
+Package: libidn
+Version: 1.35-1
+Depends: libc, libssp, librt, libpthread
+Source: feeds/packages/libs/libidn
+License: GPL-2.0+ GPL-3.0+ LGPL-2.1+ LGPL-3.0+ Apache-2.0
+LicenseFiles: COPYING COPYINGv2 COPYINGv3 COPYING.LESSERv2 COPYING.LESSERv3 java/LICENSE-2.0.txt
+Section: libs
+Maintainer: Kevin Darbyshire-Bryant <kevin@darbyshire-bryant.me.uk>
+Architecture: aarch64_generic
+Installed-Size: 62723
+Description:  GNU Libidn is a fully documented implementation of the Stringprep,
+ Punycode and IDNA specifications. Libidn's purpose is to encode and
+ decode internationalized domain names.
+ 
+ Library only package
+ 

@@ -1,0 +1,9 @@
+Package: fwtool
+Version: 1
+Depends: libc, libssp, librt, libpthread
+Source: package/system/fwtool
+Section: utils
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: aarch64_generic
+Installed-Size: 3893
+Description:  Utility for appending and extracting firmware metadata and signatures

@@ -1,0 +1,9 @@
+Package: kmod-usb-net-cdc-mbim
+Version: 4.9.111-1
+Depends: kernel (=4.9.111-1-1b6f118200b9e0574ffcad009b82d889), kmod-usb-net, kmod-usb-wdm, kmod-usb-net-cdc-ncm
+Source: package/kernel/linux
+License: GPLv2
+Section: kernel
+Architecture: aarch64_generic
+Installed-Size: 196
+Description:  Kernel module for Option USB High Speed Mobile Devices

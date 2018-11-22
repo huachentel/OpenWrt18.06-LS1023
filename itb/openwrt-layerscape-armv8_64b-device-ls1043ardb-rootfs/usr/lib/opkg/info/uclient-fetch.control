@@ -1,0 +1,10 @@
+Package: uclient-fetch
+Version: 2017-11-02-4b87d831-1
+Depends: libc, libssp, librt, libpthread, libuclient
+Source: package/libs/uclient
+License: ISC
+Section: net
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: aarch64_generic
+Installed-Size: 7282
+Description:  Tiny wget replacement using libuclient

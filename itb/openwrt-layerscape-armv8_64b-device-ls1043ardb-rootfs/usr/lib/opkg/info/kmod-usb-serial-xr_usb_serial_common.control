@@ -1,0 +1,10 @@
+Package: kmod-usb-serial-xr_usb_serial_common
+Version: 4.9.111+1a-1
+Depends: kernel (=4.9.111-1-1b6f118200b9e0574ffcad009b82d889), kmod-usb-serial
+Source: feeds/packages/libs/xr_usb_serial_common
+License: GPLv2
+Section: kernel
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Architecture: aarch64_generic
+Installed-Size: 14500
+Description:  Support for Exar USB to RS-485/RS-422

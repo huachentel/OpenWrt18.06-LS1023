@@ -1,0 +1,2 @@
+/etc/modules.d/usb-net-mcs7830
+/lib/modules/4.9.111/mcs7830.ko

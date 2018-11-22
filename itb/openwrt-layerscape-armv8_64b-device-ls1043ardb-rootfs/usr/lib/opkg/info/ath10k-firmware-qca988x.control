@@ -1,0 +1,9 @@
+Package: ath10k-firmware-qca988x
+Version: 2018-04-19-71e50312-1
+Depends: libc, libssp, librt, libpthread
+Source: package/firmware/ath10k-firmware
+Section: firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: aarch64_generic
+Installed-Size: 217001
+Description:  ath10k firmware for QCA988x devices
