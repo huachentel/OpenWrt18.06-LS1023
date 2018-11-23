@@ -6,6 +6,6 @@ License: BSD-4-Clause
 Section: net
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Architecture: aarch64_generic
-Installed-Size: 9539
+Installed-Size: 9538
 Description:  This package contains an utility to establish conversation with other PPP servers
  (via a modem).

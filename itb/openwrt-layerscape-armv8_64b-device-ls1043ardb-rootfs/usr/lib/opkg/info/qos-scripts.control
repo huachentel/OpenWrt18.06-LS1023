@@ -6,7 +6,7 @@ License: GPL-2.0
 Section: utils
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Architecture: all
-Installed-Size: 6375
+Installed-Size: 6377
 Description:  A set of scripts that abstract QoS configuration into a simple 
  configuration file supporting stanzas that specify any number of QoS 
  entries.

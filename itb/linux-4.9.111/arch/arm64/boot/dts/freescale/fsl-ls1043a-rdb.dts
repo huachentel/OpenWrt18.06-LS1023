@@ -63,6 +63,7 @@
 	};
 };
 
+
 &i2c0 {
 	status = "okay";
 	ina220@40 {
@@ -91,6 +92,7 @@
 		reg = <0x51>;
 	};
 };
+
 
 &ifc {
 	status = "okay";

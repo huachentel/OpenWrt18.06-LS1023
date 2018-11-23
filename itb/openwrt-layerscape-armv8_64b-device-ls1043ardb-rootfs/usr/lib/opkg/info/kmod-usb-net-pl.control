@@ -5,5 +5,5 @@ Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Architecture: aarch64_generic
-Installed-Size: 1075
+Installed-Size: 1073
 Description:  Kernel support for Prolific PL-2301/2302/25A1 based cables

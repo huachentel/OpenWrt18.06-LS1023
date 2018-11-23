@@ -6,5 +6,5 @@ License: ISC
 Section: net
 Maintainer: Jo-Philipp Wich <jo@mein.io>
 Architecture: aarch64_generic
-Installed-Size: 47609
+Installed-Size: 47615
 Description:  This package provides a config-compatible C implementation of the UCI firewall.

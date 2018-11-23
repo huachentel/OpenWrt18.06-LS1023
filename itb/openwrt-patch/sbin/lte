@@ -1,0 +1,28 @@
+#!/bin/sh
+# liji 20181120
+
+
+OP="$1"
+
+usage() {
+	cat <<EOF
+Usage: $0 [UP | DOWN]
+down (default), up or configures devices not yet configured.
+EOF
+	exit 1
+}
+
+lte_down(){
+	echo "AT+ZECMCALL=0" > /dev/ttyUSB1
+}
+
+lte_up(){
+	echo "AT+ZECMCALL=1" > /dev/ttyUSB1
+}
+
+
+case "$1" in
+	down) lte_down ;;
+	up)  lte_up ;;	
+	--help|help) usage;;	
+esac

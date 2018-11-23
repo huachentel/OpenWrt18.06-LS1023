@@ -5,5 +5,5 @@ Source: package/libs/libnl
 License: LGPL-2.1
 Section: libs
 Architecture: aarch64_generic
-Installed-Size: 24473
+Installed-Size: 24467
 Description:  Netfilter Netlink Library Functions

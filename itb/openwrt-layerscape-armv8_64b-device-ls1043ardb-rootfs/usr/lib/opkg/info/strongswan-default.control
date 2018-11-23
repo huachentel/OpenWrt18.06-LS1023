@@ -6,6 +6,6 @@ License: GPL-2.0+
 Section: net
 Maintainer: Stijn Tintel <stijn@linux-ipv6.be>
 Architecture: aarch64_generic
-Installed-Size: 105
+Installed-Size: 104
 Description:  StrongSwan is an OpenSource IPsec implementation for the Linux operating system.
  This meta-package contains only dependencies to match upstream defaults.

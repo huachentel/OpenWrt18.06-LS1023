@@ -5,5 +5,5 @@ Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Architecture: aarch64_generic
-Installed-Size: 9090
+Installed-Size: 9087
 Description:  Kernel module for USB-to-Ethernet Pegasus convertors

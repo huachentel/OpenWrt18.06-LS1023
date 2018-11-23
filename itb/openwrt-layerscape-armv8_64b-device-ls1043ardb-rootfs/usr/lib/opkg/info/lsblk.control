@@ -6,5 +6,5 @@ License: GPL-2.0
 LicenseFiles: COPYING libblkid/COPYING libmount/COPYING Documentation/licenses/COPYING.GPLv2 Documentation/licenses/COPYING.LGPLv2.1 libuuid/COPYING Documentation/licenses/COPYING.BSD-3
 Section: utils
 Architecture: aarch64_generic
-Installed-Size: 25622
+Installed-Size: 25621
 Description:  lsblk lists information about all or the specified block devices

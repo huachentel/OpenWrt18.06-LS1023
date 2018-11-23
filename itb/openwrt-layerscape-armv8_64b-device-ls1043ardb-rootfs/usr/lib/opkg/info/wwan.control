@@ -6,5 +6,5 @@ License: GPL-2.0
 Section: net
 Maintainer: John Crispin <john@phrozen.org>
 Architecture: aarch64_generic
-Installed-Size: 9743
+Installed-Size: 9755
 Description:  Generic OpenWrt 3G/4G proto handler

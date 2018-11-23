@@ -6,5 +6,5 @@ License: GPL-2.0
 Section: base
 Maintainer: John Crispin <john@phrozen.org>
 Architecture: aarch64_generic
-Installed-Size: 16746
+Installed-Size: 16744
 Description:  OpenWrt system helper toolbox

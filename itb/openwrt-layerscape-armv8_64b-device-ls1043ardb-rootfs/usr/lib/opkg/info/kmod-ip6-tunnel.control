@@ -5,5 +5,5 @@ Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Architecture: aarch64_generic
-Installed-Size: 15644
+Installed-Size: 15641
 Description:  Kernel modules for IPv6-in-IPv6 and IPv4-in-IPv6 tunnelling

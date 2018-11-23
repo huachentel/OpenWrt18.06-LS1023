@@ -7,7 +7,7 @@ LicenseFiles: LICENSE
 Section: libs
 Maintainer: W. Michael Petullo <mike@flyn.org>
 Architecture: aarch64_generic
-Installed-Size: 192258
+Installed-Size: 192259
 Description:  OpenLDAP Software is an open source implementation of the
  Lightweight Directory Access Protocol (LDAP).
  This package contains the shared LDAP client libraries, needed by other programs.

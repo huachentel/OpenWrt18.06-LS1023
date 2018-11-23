@@ -7,5 +7,5 @@ LicenseFiles: COPYING
 Section: libs
 Maintainer: Jiri Slachta <jiri@slachta.eu>
 Architecture: aarch64_generic
-Installed-Size: 60870
+Installed-Size: 60868
 Description:  libssh2 is a client-side C library implementing the SSH2 protocol.

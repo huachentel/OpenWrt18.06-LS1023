@@ -5,6 +5,6 @@ Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Architecture: aarch64_generic
-Installed-Size: 230
+Installed-Size: 231
 Description:  This driver provides support for the Dual Role SuperSpeed
  USB Controller based on the Synopsys DesignWare USB3 IP Core

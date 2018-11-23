@@ -6,5 +6,5 @@ License: GPL-2.0
 LicenseFiles: COPYING libblkid/COPYING libmount/COPYING Documentation/licenses/COPYING.GPLv2 Documentation/licenses/COPYING.LGPLv2.1 libuuid/COPYING Documentation/licenses/COPYING.BSD-3
 Section: libs
 Architecture: aarch64_generic
-Installed-Size: 70583
+Installed-Size: 70579
 Description:  The smartcols library is used to print tables and trees in a pretty way.

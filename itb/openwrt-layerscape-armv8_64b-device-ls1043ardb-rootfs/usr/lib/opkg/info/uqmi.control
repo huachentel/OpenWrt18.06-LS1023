@@ -6,6 +6,6 @@ License: GPL-2.0
 Section: net
 Maintainer: Matti Laakso <malaakso@elisanet.fi>
 Architecture: aarch64_generic
-Installed-Size: 25852
+Installed-Size: 25851
 Description:  uqmi is a command line tool for controlling mobile broadband modems using
  the QMI-protocol.

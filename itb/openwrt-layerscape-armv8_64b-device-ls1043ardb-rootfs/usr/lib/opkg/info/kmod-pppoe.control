@@ -5,5 +5,5 @@ Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Architecture: aarch64_generic
-Installed-Size: 182
+Installed-Size: 180
 Description:  Kernel module for PPPoE (PPP over Ethernet) support

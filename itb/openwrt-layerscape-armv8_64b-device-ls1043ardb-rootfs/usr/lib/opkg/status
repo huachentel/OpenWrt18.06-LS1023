@@ -19,6 +19,13 @@ Status: install user installed
 Architecture: aarch64_generic
 Installed-Time: 1532967917
 
+Package: luci-mod-rpc
+Version: git-18.210.69179-6df9a57-1
+Depends: libc, libssp, librt, libpthread, luci-lib-json
+Status: install user installed
+Architecture: all
+Installed-Time: 1532967917
+
 Package: kmod-usb-net-cdc-subset
 Version: 4.9.111-1
 Depends: kernel (= 4.9.111-1-1b6f118200b9e0574ffcad009b82d889), kmod-usb-net
@@ -155,6 +162,15 @@ Architecture: aarch64_generic
 Installed-Time: 1532967917
 Auto-Installed: yes
 
+Package: rpcd
+Version: 2018-05-13-82062195-1
+Depends: libc, libssp, librt, libpthread, libubus, libubox, libuci, libblobmsg-json
+Status: install user installed
+Architecture: aarch64_generic
+Conffiles:
+ /etc/config/rpcd 9f58e09bb250fe6cee61c873ff2c1a19cb800d12cef0773bd5dfc47e0d01c90b
+Installed-Time: 1532967917
+
 Package: busybox
 Version: 1.28.3-4
 Depends: libc, libssp, librt, libpthread, jsonfilter
@@ -178,6 +194,14 @@ Depends: kernel (= 4.9.111-1-1b6f118200b9e0574ffcad009b82d889), kmod-usb-net, km
 Status: install user installed
 Architecture: aarch64_generic
 Installed-Time: 1532967917
+
+Package: luci-lib-ip
+Version: git-18.210.69179-6df9a57-1
+Depends: libc, libssp, librt, libpthread, liblua, libnl-tiny
+Status: install user installed
+Architecture: aarch64_generic
+Installed-Time: 1532967917
+Auto-Installed: yes
 
 Package: ip-full
 Version: 4.16.0-4
@@ -217,6 +241,13 @@ Status: install user installed
 Architecture: aarch64_generic
 Installed-Time: 1532967917
 
+Package: libubus-lua
+Version: 2018-07-26-40e0931e-1
+Depends: libc, libssp, librt, libpthread, libubus, liblua
+Status: install user installed
+Architecture: aarch64_generic
+Installed-Time: 1532967917
+
 Package: kmod-crypto-hash
 Version: 4.9.111-1
 Depends: kernel (= 4.9.111-1-1b6f118200b9e0574ffcad009b82d889)
@@ -244,6 +275,13 @@ Installed-Time: 1532967917
 Package: kmod-usb-net-cdc-eem
 Version: 4.9.111-1
 Depends: kernel (= 4.9.111-1-1b6f118200b9e0574ffcad009b82d889), kmod-usb-net
+Status: install user installed
+Architecture: aarch64_generic
+Installed-Time: 1532967917
+
+Package: libiwinfo-lua
+Version: 2018-07-24-94b1366d-1
+Depends: libc, libssp, librt, libpthread, libiwinfo, liblua
 Status: install user installed
 Architecture: aarch64_generic
 Installed-Time: 1532967917
@@ -285,6 +323,13 @@ Status: install user installed
 Architecture: aarch64_generic
 Installed-Time: 1532967917
 
+Package: libiwinfo
+Version: 2018-07-24-94b1366d-1
+Depends: libc, libssp, librt, libpthread, libnl-tiny, libuci, libubus
+Status: install user installed
+Architecture: aarch64_generic
+Installed-Time: 1532967917
+
 Package: kmod-crypto-md5
 Version: 4.9.111-1
 Depends: kernel (= 4.9.111-1-1b6f118200b9e0574ffcad009b82d889), kmod-crypto-hash
@@ -299,6 +344,15 @@ Status: install user installed
 Architecture: aarch64_generic
 Installed-Time: 1532967917
 
+Package: openssl-util
+Version: 1.0.2o-1
+Depends: libc, libssp, librt, libpthread, libopenssl
+Status: install user installed
+Architecture: aarch64_generic
+Conffiles:
+ /etc/ssl/openssl.cnf 06baa8f15992bacd3e5b113cd571d828c0544d0482ccd2e15969fe819957271d
+Installed-Time: 1532967917
+
 Package: libssh2
 Version: 1.8.0-2
 Depends: libc, libssp, librt, libpthread, libmbedtls, zlib
@@ -309,6 +363,14 @@ Installed-Time: 1532967917
 Package: kmod-lib-crc-ccitt
 Version: 4.9.111-1
 Depends: kernel (= 4.9.111-1-1b6f118200b9e0574ffcad009b82d889)
+Status: install user installed
+Architecture: aarch64_generic
+Installed-Time: 1532967917
+
+Package: px5g-mbedtls
+Version: 5
+Depends: libc, libssp, librt, libpthread, libmbedtls
+Provides: px5g
 Status: install user installed
 Architecture: aarch64_generic
 Installed-Time: 1532967917
@@ -327,6 +389,14 @@ Depends: kernel (= 4.9.111-1-1b6f118200b9e0574ffcad009b82d889), kmod-crypto-auth
 Status: install user installed
 Architecture: aarch64_generic
 Installed-Time: 1532967917
+
+Package: luci-theme-bootstrap
+Version: git-18.210.69179-6df9a57-1
+Depends: libc, libssp, librt, libpthread
+Status: install user installed
+Architecture: all
+Installed-Time: 1532967917
+Auto-Installed: yes
 
 Package: kmod-pppoe
 Version: 4.9.111-1
@@ -541,6 +611,13 @@ Status: install user installed
 Architecture: aarch64_generic
 Installed-Time: 1532967917
 
+Package: libustream-openssl
+Version: 2018-04-30-527e7002-3
+Depends: libc, libssp, librt, libpthread, libubox, libopenssl
+Status: install user installed
+Architecture: aarch64_generic
+Installed-Time: 1532967917
+
 Package: hostapd-utils
 Version: 2018-04-09-fa617ee6-5
 Depends: libc, libssp, librt, libpthread
@@ -680,6 +757,14 @@ Status: install user installed
 Architecture: aarch64_generic
 Installed-Time: 1532967917
 
+Package: luci-app-firewall
+Version: git-18.210.69179-6df9a57-1
+Depends: libc, libssp, librt, libpthread, firewall
+Status: install user installed
+Architecture: all
+Installed-Time: 1532967917
+Auto-Installed: yes
+
 Package: libnl-genl
 Version: 3.3.0-1
 Depends: libc, libssp, librt, libpthread, libnl-core
@@ -734,6 +819,14 @@ Auto-Installed: yes
 Package: libuci
 Version: 2018-03-24-5d2bf09e-1
 Depends: libc, libssp, librt, libpthread, libubox
+Status: install user installed
+Architecture: aarch64_generic
+Installed-Time: 1532967917
+Auto-Installed: yes
+
+Package: liblua
+Version: 5.1.5-1
+Depends: libc, libssp, librt, libpthread
 Status: install user installed
 Architecture: aarch64_generic
 Installed-Time: 1532967917
@@ -838,6 +931,13 @@ Installed-Time: 1532967917
 Package: uci
 Version: 2018-03-24-5d2bf09e-1
 Depends: libc, libssp, librt, libpthread, libuci
+Status: install user installed
+Architecture: aarch64_generic
+Installed-Time: 1532967917
+
+Package: lua
+Version: 5.1.5-1
+Depends: libc, libssp, librt, libpthread, liblua
 Status: install user installed
 Architecture: aarch64_generic
 Installed-Time: 1532967917
@@ -988,6 +1088,14 @@ Status: install user installed
 Architecture: aarch64_generic
 Installed-Time: 1532967917
 
+Package: luci-proto-ppp
+Version: git-18.210.69179-6df9a57-1
+Depends: libc, libssp, librt, libpthread
+Status: install user installed
+Architecture: all
+Installed-Time: 1532967917
+Auto-Installed: yes
+
 Package: strongswan-mod-socket-default
 Version: 5.6.3-1
 Depends: libc, libssp, librt, libpthread, strongswan
@@ -1023,6 +1131,14 @@ Conffiles:
  /etc/ppp/options a0509db666fc831a3f9332ca6e911ba9a32e7f1ce13733e539a719f0413794b9
 Installed-Time: 1532967917
 
+Package: luci-mod-admin-full
+Version: git-18.210.69179-6df9a57-1
+Depends: libc, libssp, librt, libpthread, luci-base
+Status: install user installed
+Architecture: aarch64_generic
+Installed-Time: 1532967917
+Auto-Installed: yes
+
 Package: strongswan-mod-resolve
 Version: 5.6.3-1
 Depends: libc, libssp, librt, libpthread, strongswan
@@ -1036,6 +1152,18 @@ Version: 2018-07-25-c83a84af-1
 Depends: libc, libssp, librt, libpthread
 Status: install user installed
 Architecture: aarch64_generic
+Installed-Time: 1532967917
+Auto-Installed: yes
+
+Package: luci-base
+Version: git-18.210.69179-6df9a57-1
+Depends: libc, libssp, librt, libpthread, lua, luci-lib-nixio, luci-lib-ip, rpcd, libubus-lua, luci-lib-jsonc, liblucihttp-lua
+Status: install user installed
+Architecture: aarch64_generic
+Conffiles:
+ /etc/luci-uploads/.placeholder e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+ /etc/config/luci 5a7c058ee80817cbda78401fa5e13eb2c0580d4aca9e4bf00df12f8d558aec29
+ /etc/config/ucitrack 3480e8ca8e224537c9d95e7678b05123ff7b06a2a0b3d1000032a04576d90381
 Installed-Time: 1532967917
 Auto-Installed: yes
 
@@ -1150,6 +1278,14 @@ Version: 4.9.111-1
 Depends: kernel (= 4.9.111-1-1b6f118200b9e0574ffcad009b82d889), kmod-usb-net
 Status: install user installed
 Architecture: aarch64_generic
+Installed-Time: 1532967917
+Auto-Installed: yes
+
+Package: luci-proto-ipv6
+Version: git-18.210.69179-6df9a57-1
+Depends: libc, libssp, librt, libpthread
+Status: install user installed
+Architecture: all
 Installed-Time: 1532967917
 Auto-Installed: yes
 
@@ -1270,6 +1406,14 @@ Status: install user installed
 Architecture: aarch64_generic
 Installed-Time: 1532967917
 
+Package: liblucihttp
+Version: 2018-05-18-cb119ded-1
+Depends: libc, libssp, librt, libpthread
+Status: install user installed
+Architecture: aarch64_generic
+Installed-Time: 1532967917
+Auto-Installed: yes
+
 Package: kmod-usb-net-ipheth
 Version: 4.9.111-1
 Depends: kernel (= 4.9.111-1-1b6f118200b9e0574ffcad009b82d889), kmod-usb-net
@@ -1365,6 +1509,15 @@ Status: install user installed
 Architecture: aarch64_generic
 Installed-Time: 1532967917
 Auto-Installed: yes
+
+Package: uhttpd
+Version: 2018-06-26-796d42bc-1
+Depends: libc, libssp, librt, libpthread, libubox, libblobmsg-json, libjson-script
+Status: install user installed
+Architecture: aarch64_generic
+Conffiles:
+ /etc/config/uhttpd f7b9c565f53bc93c03badc9164ca50b9bf6aa3ced8ff81a3876045e82a62c737
+Installed-Time: 1532967917
 
 Package: kmod-iptunnel4
 Version: 4.9.111-1
@@ -1477,6 +1630,14 @@ Status: install user installed
 Architecture: aarch64_generic
 Installed-Time: 1532967917
 
+Package: luci-lib-nixio
+Version: git-18.210.69179-6df9a57-1
+Depends: libc, libssp, librt, libpthread, liblua
+Status: install user installed
+Architecture: aarch64_generic
+Installed-Time: 1532967917
+Auto-Installed: yes
+
 Package: strongswan-mod-x509
 Version: 5.6.3-1
 Depends: libc, libssp, librt, libpthread, strongswan
@@ -1507,11 +1668,26 @@ Status: install user installed
 Architecture: aarch64_generic
 Installed-Time: 1532967917
 
+Package: liblucihttp-lua
+Version: 2018-05-18-cb119ded-1
+Depends: libc, libssp, librt, libpthread, liblucihttp, liblua
+Status: install user installed
+Architecture: aarch64_generic
+Installed-Time: 1532967917
+Auto-Installed: yes
+
 Package: ath10k-firmware-qca988x
 Version: 2018-04-19-71e50312-1
 Depends: libc, libssp, librt, libpthread
 Status: install user installed
 Architecture: aarch64_generic
+Installed-Time: 1532967917
+
+Package: luci-lib-json
+Version: git-18.210.69179-6df9a57-1
+Depends: libc, libssp, librt, libpthread
+Status: install user installed
+Architecture: all
 Installed-Time: 1532967917
 
 Package: umbim
@@ -1520,6 +1696,14 @@ Depends: libc, libssp, librt, libpthread, libubox, kmod-usb-net, kmod-usb-net-cd
 Status: install user installed
 Architecture: aarch64_generic
 Installed-Time: 1532967917
+
+Package: luci-lib-jsonc
+Version: git-18.210.69179-6df9a57-1
+Depends: libc, libssp, librt, libpthread, liblua, libjson-c
+Status: install user installed
+Architecture: aarch64_generic
+Installed-Time: 1532967917
+Auto-Installed: yes
 
 Package: kmod-ipt-ipopt
 Version: 4.9.111-1
@@ -1535,6 +1719,13 @@ Status: install user installed
 Architecture: aarch64_generic
 Installed-Time: 1532967917
 Auto-Installed: yes
+
+Package: luci
+Version: git-18.210.69179-6df9a57-1
+Depends: libc, libssp, librt, libpthread, uhttpd, luci-mod-admin-full, luci-theme-bootstrap, luci-app-firewall, luci-proto-ppp, libiwinfo-lua, luci-proto-ipv6, rpcd-mod-rrdns
+Status: install user installed
+Architecture: all
+Installed-Time: 1532967917
 
 Package: kmod-nf-conntrack6
 Version: 4.9.111-1
@@ -1807,6 +1998,14 @@ Architecture: all
 Conffiles:
  /etc/config/qos 4eb1db98deeb8341f9307ffa2cefb44eda03c88d1950e659036410cf3e3fa8c0
 Installed-Time: 1532967917
+
+Package: rpcd-mod-rrdns
+Version: 20170710
+Depends: libc, libssp, librt, libpthread, rpcd, libubox, libubus
+Status: install user installed
+Architecture: aarch64_generic
+Installed-Time: 1532967917
+Auto-Installed: yes
 
 Package: ppp-mod-pppoe
 Version: 2.4.7-12

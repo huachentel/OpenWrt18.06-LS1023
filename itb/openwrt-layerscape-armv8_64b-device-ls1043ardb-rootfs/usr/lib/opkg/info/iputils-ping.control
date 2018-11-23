@@ -6,6 +6,6 @@ License: GPL-2.0+
 Section: net
 Maintainer: Jo-Philipp Wich <jo@mein.io>
 Architecture: aarch64_generic
-Installed-Size: 14361
+Installed-Size: 14359
 Description:  Program ping from iputils.
  Sends ICMP ECHO_REQUEST to network hosts (IPv4).

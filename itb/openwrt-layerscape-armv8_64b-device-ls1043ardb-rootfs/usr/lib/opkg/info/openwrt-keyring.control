@@ -7,5 +7,5 @@ License: GPL-2.0
 Section: base
 Maintainer: John Crispin <john@phrozen.org>
 Architecture: aarch64_generic
-Installed-Size: 1154
+Installed-Size: 1155
 Description:  The keyring of with the developer using and gpg public keys.

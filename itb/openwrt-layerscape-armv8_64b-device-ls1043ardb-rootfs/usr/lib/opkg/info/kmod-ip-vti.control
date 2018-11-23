@@ -5,5 +5,5 @@ Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Architecture: aarch64_generic
-Installed-Size: 4551
+Installed-Size: 4548
 Description:  Kernel modules for IP VTI (Virtual Tunnel Interface)

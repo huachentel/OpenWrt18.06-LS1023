@@ -1,0 +1,9 @@
+Package: luci-proto-ppp
+Version: git-18.210.69179-6df9a57-1
+Depends: libc, libssp, librt, libpthread
+Source: feeds/luci/protocols/luci-proto-ppp
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 3148
+Description:  Support for PPP/PPPoE/PPPoA/PPtP

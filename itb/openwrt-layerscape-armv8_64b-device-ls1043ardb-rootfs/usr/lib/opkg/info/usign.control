@@ -6,5 +6,5 @@ License: ISC
 Section: base
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Architecture: aarch64_generic
-Installed-Size: 10063
+Installed-Size: 10062
 Description:  OpenWrt signature verification utility

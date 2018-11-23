@@ -1,0 +1,10 @@
+Package: libustream-openssl
+Version: 2018-04-30-527e7002-3
+Depends: libc, libssp, librt, libpthread, libubox, libopenssl
+Source: package/libs/ustream-ssl
+License: ISC
+Section: libs
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: aarch64_generic
+Installed-Size: 4039
+Description:  ustream SSL Library (openssl)

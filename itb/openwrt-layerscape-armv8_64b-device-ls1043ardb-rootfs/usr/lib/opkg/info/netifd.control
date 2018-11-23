@@ -6,5 +6,5 @@ License: GPL-2.0
 Section: base
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Architecture: aarch64_generic
-Installed-Size: 68666
+Installed-Size: 68664
 Description:  OpenWrt Network Interface Configuration Daemon

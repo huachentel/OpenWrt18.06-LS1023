@@ -5,5 +5,5 @@ Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Architecture: aarch64_generic
-Installed-Size: 3123
+Installed-Size: 3121
 Description:  Kernel module for USB-to-Ethernet MCS7830 convertors

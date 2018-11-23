@@ -5,5 +5,5 @@ Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Architecture: aarch64_generic
-Installed-Size: 42684
+Installed-Size: 42681
 Description:  Netfilter connection tracking

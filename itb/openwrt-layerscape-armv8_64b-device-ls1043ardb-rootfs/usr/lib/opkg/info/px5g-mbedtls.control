@@ -1,0 +1,13 @@
+Package: px5g-mbedtls
+Version: 5
+Depends: libc, libssp, librt, libpthread, libmbedtls
+Provides: px5g
+Source: package/utils/px5g
+License: LGPL-2.1
+Section: utils
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: aarch64_generic
+Installed-Size: 4341
+Description:  Px5g is a tiny standalone X.509 certificate generator.
+ It suitable to create key files and certificates in DER
+ and PEM format for use with stunnel, uhttpd and others.

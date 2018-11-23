@@ -5,5 +5,5 @@ Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Architecture: aarch64_generic
-Installed-Size: 19571
+Installed-Size: 19569
 Description:  Kernel module for USB-to-Ethernet Realtek 8152 USB2.0/3.0 convertors

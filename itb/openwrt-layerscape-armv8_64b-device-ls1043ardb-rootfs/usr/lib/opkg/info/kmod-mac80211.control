@@ -5,5 +5,5 @@ Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Architecture: aarch64_generic
-Installed-Size: 243677
+Installed-Size: 243676
 Description:  Generic IEEE 802.11 Networking Stack (mac80211)

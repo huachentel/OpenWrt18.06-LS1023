@@ -6,5 +6,5 @@ License: GPL-2.0+
 Section: net
 Maintainer: Stijn Tintel <stijn@linux-ipv6.be>
 Architecture: aarch64_generic
-Installed-Size: 12015
+Installed-Size: 12014
 Description:  StrongSwan libgmp plugin

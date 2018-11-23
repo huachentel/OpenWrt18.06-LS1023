@@ -7,5 +7,5 @@ LicenseFiles: COPYING
 Section: libs
 Maintainer: Espen Jürgensen <espenjurgensen+openwrt@gmail.com>
 Architecture: aarch64_generic
-Installed-Size: 18220
+Installed-Size: 18219
 Description:  A small xml library.

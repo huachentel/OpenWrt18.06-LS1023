@@ -5,7 +5,7 @@ Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Architecture: aarch64_generic
-Installed-Size: 14644
+Installed-Size: 14641
 Description:  Netfilter core kernel modules
  Includes:
  - comment

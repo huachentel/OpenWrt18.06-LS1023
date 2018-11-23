@@ -5,5 +5,5 @@ Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Architecture: aarch64_generic
-Installed-Size: 2609
+Installed-Size: 2607
 Description:  Traffic shaper conntrack mark support

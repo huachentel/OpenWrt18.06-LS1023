@@ -6,5 +6,5 @@ License: GPL-2.0
 Section: base
 Maintainer: John Crispin <john@phrozen.org>
 Architecture: aarch64_generic
-Installed-Size: 43866
+Installed-Size: 43870
 Description:  OpenWrt system process manager

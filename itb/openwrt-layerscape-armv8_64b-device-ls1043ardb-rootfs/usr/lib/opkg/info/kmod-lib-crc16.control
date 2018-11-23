@@ -5,5 +5,5 @@ Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Architecture: aarch64_generic
-Installed-Size: 231
+Installed-Size: 230
 Description:  Kernel module for CRC16 support

@@ -5,5 +5,5 @@ Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Architecture: aarch64_generic
-Installed-Size: 187
+Installed-Size: 186
 Description:  USB Wireless Device Management support

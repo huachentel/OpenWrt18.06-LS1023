@@ -5,5 +5,5 @@ Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Architecture: aarch64_generic
-Installed-Size: 3972
+Installed-Size: 3969
 Description:  Kernel support for Apple iPhone USB Ethernet driver

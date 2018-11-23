@@ -5,5 +5,5 @@ Source: package/libs/libnl
 License: LGPL-2.1
 Section: libs
 Architecture: aarch64_generic
-Installed-Size: 124118
+Installed-Size: 124119
 Description:  Routing Netlink Library Functions

@@ -1,0 +1,9 @@
+Package: luci-base
+Version: git-18.210.69179-6df9a57-1
+Depends: libc, libssp, librt, libpthread, lua, luci-lib-nixio, luci-lib-ip, rpcd, libubus-lua, luci-lib-jsonc, liblucihttp-lua
+Source: feeds/luci/modules/luci-base
+License: MIT
+Section: luci
+Architecture: aarch64_generic
+Installed-Size: 125386
+Description:  LuCI core libraries

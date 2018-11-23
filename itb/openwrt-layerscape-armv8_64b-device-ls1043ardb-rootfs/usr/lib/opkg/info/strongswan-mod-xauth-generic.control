@@ -6,5 +6,5 @@ License: GPL-2.0+
 Section: net
 Maintainer: Stijn Tintel <stijn@linux-ipv6.be>
 Architecture: aarch64_generic
-Installed-Size: 3130
+Installed-Size: 3127
 Description:  StrongSwan generic XAuth backend plugin

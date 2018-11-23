@@ -6,6 +6,6 @@ License: GPL-2.0
 Section: net
 Maintainer: John Crispin <john@phrozen.org>
 Architecture: aarch64_generic
-Installed-Size: 12733
+Installed-Size: 12735
 Description:  umbim is a command line tool for controlling mobile broadband modems using
  the MBIM-protocol.

@@ -6,5 +6,5 @@ License: ISC
 Section: base
 Maintainer: Jo-Philipp Wich <jo@mein.io>
 Architecture: aarch64_generic
-Installed-Size: 10004
+Installed-Size: 10005
 Description:  OpenWrt JSON filter utility

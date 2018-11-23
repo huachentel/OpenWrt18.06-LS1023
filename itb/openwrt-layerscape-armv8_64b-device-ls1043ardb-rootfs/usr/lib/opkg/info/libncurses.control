@@ -7,5 +7,5 @@ License: MIT
 LicenseFiles: README
 Section: libs
 Architecture: aarch64_generic
-Installed-Size: 155286
+Installed-Size: 155281
 Description:  Terminal handling library (Unicode)

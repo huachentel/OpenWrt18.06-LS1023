@@ -6,7 +6,7 @@ License: GPL-2.0
 Section: utils
 Maintainer: Christian Beier <cb@shoutrlabs.com>
 Architecture: aarch64_generic
-Installed-Size: 24065
+Installed-Size: 24060
 Description:  logrotate is designed to ease administration of systems that generate large
  numbers of log files. It allows auto-matic rotation, compression, removal and
  mailing of log files. Each log file may be handled daily, weekly, monthly or

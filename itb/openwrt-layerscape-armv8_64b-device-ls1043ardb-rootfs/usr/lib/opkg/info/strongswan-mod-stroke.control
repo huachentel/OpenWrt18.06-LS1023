@@ -6,5 +6,5 @@ License: GPL-2.0+
 Section: net
 Maintainer: Stijn Tintel <stijn@linux-ipv6.be>
 Architecture: aarch64_generic
-Installed-Size: 65230
+Installed-Size: 65232
 Description:  StrongSwan Stroke plugin

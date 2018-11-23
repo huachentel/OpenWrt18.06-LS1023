@@ -6,5 +6,5 @@ License: ISC
 Section: utils
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Architecture: aarch64_generic
-Installed-Size: 6607
+Installed-Size: 6606
 Description:  Library for parsing and generating JSON from shell scripts

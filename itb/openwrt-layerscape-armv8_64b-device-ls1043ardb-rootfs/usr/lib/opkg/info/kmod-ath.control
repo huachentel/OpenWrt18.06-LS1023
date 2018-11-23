@@ -5,5 +5,5 @@ Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Architecture: aarch64_generic
-Installed-Size: 10977
+Installed-Size: 10976
 Description:  This module contains some common parts needed by Atheros Wireless drivers.

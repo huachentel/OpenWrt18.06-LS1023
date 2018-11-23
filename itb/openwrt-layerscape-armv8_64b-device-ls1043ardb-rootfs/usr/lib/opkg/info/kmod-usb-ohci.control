@@ -5,5 +5,5 @@ Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Architecture: aarch64_generic
-Installed-Size: 251
+Installed-Size: 250
 Description:  Kernel support for USB OHCI controllers

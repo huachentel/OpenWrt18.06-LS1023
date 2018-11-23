@@ -6,5 +6,5 @@ License: GPL-2.0+
 LicenseFiles: COPYING
 Section: libs
 Architecture: aarch64_generic
-Installed-Size: 231562
+Installed-Size: 231563
 Description:  GNU crypto library

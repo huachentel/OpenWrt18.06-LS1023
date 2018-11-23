@@ -5,5 +5,5 @@ Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Architecture: aarch64_generic
-Installed-Size: 193
+Installed-Size: 192
 Description:  Kernel support for CDC NCM connections

@@ -5,5 +5,5 @@ Source: package/kernel/linux
 License: GPLv2
 Section: sys
 Architecture: aarch64_generic
-Installed-Size: 105
+Installed-Size: 104
 Description:  Virtual kernel package

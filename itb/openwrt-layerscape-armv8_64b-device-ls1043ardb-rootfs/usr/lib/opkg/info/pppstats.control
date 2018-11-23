@@ -6,5 +6,5 @@ License: BSD-4-Clause
 Section: net
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Architecture: aarch64_generic
-Installed-Size: 4770
+Installed-Size: 4769
 Description:  This package contains an utility to report PPP statistics.

@@ -1,0 +1,9 @@
+Package: luci-lib-json
+Version: git-18.210.69179-6df9a57-1
+Depends: libc, libssp, librt, libpthread
+Source: feeds/luci/libs/luci-lib-json
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 3136
+Description:  LuCI JSON library

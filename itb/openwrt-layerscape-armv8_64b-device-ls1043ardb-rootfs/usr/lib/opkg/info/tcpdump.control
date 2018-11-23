@@ -6,5 +6,5 @@ License: BSD-3-Clause
 Section: net
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Architecture: aarch64_generic
-Installed-Size: 331613
+Installed-Size: 331612
 Description:  Network monitoring and data acquisition tool

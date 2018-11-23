@@ -7,5 +7,5 @@ LicenseFiles: COPYING cmulocal/COPYING saslauthd/COPYING
 Section: libs
 Maintainer: W. Michael Petullo <mike@flyn.org>
 Architecture: aarch64_generic
-Installed-Size: 82924
+Installed-Size: 82920
 Description:  A general purpose authentication library

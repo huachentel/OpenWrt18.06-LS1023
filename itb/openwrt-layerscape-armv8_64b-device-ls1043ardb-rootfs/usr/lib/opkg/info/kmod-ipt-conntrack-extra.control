@@ -5,7 +5,7 @@ Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Architecture: aarch64_generic
-Installed-Size: 10940
+Installed-Size: 10935
 Description:  Netfilter (IPv4) extra kernel modules for connection tracking
  Includes:
  - connbytes

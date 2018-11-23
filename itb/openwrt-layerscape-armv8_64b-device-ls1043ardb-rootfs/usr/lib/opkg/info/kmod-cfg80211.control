@@ -5,5 +5,5 @@ Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Architecture: aarch64_generic
-Installed-Size: 143782
+Installed-Size: 143779
 Description:  cfg80211 is the Linux wireless LAN (802.11) configuration API.

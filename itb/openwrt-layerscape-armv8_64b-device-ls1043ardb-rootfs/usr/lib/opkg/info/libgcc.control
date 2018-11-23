@@ -7,5 +7,5 @@ Status: unknown hold not-installed
 Essential: yes
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Architecture: aarch64_generic
-Installed-Size: 33482
+Installed-Size: 33481
 Description:  GCC support library

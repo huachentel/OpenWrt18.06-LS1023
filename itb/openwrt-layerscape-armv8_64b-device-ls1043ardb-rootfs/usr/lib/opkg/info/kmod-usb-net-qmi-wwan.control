@@ -5,5 +5,5 @@ Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Architecture: aarch64_generic
-Installed-Size: 5795
+Installed-Size: 5793
 Description:  QMI WWAN driver for Qualcomm MSM based 3G and LTE modems

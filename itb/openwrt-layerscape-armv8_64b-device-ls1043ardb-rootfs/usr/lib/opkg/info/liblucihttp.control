@@ -1,0 +1,11 @@
+Package: liblucihttp
+Version: 2018-05-18-cb119ded-1
+Depends: libc, libssp, librt, libpthread
+Source: feeds/luci/contrib/package/lucihttp
+License: ISC
+LicenseFiles: LICENSE
+Section: libs
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: aarch64_generic
+Installed-Size: 7276
+Description:  LuCI HTTP utility library

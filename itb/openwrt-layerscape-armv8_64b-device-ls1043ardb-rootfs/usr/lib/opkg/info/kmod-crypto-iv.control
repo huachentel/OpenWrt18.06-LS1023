@@ -5,5 +5,5 @@ Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Architecture: aarch64_generic
-Installed-Size: 201
+Installed-Size: 199
 Description:  CryptoAPI initialization vectors

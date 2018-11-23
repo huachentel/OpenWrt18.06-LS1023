@@ -7,7 +7,7 @@ LicenseFiles: COPYING COPYINGv2 COPYINGv3 COPYING.LESSERv2 COPYING.LESSERv3 java
 Section: libs
 Maintainer: Kevin Darbyshire-Bryant <kevin@darbyshire-bryant.me.uk>
 Architecture: aarch64_generic
-Installed-Size: 62723
+Installed-Size: 62722
 Description:  GNU Libidn is a fully documented implementation of the Stringprep,
  Punycode and IDNA specifications. Libidn's purpose is to encode and
  decode internationalized domain names.

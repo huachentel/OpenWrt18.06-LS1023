@@ -5,5 +5,5 @@ Source: package/firmware/layerscape/fman-ucode
 Section: firmware
 Maintainer: Jiang Yutang <jiangyutang1978@gmail.com>
 Architecture: aarch64_generic
-Installed-Size: 105
+Installed-Size: 104
 Description:  FMAN UCODE fman-ucode-2017-02-13-c275e913 for NXP ls1043ardb 64b/32b Dev Board

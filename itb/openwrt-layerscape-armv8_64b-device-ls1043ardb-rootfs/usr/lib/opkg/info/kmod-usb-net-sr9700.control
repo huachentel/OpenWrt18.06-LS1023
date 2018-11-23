@@ -5,5 +5,5 @@ Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Architecture: aarch64_generic
-Installed-Size: 3543
+Installed-Size: 3541
 Description:  Kernel module for CoreChip-sz SR9700 based USB 1.1 10/100 ethernet devices

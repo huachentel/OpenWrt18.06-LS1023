@@ -5,7 +5,7 @@ Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Architecture: aarch64_generic
-Installed-Size: 6541
+Installed-Size: 6540
 Description:  Kernel modules for IPsec support in IPv4.
  Includes:
  - ah4
