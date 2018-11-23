@@ -489,24 +489,44 @@
 		};
 
 		i2c@4{
-			compatible = "i2c-gpio";
-			gpios = <&gpio1 25 0 /* sda */
-					 &gpio1 26 0 /* scl */
-					>;			
-			i2c-gpio,scl-output-only;
-			i2c-gpio,delay-us = <2>;	/* ~100 kHz */
-			#address-cells = <1>;
-			#size-cells = <0>;
+				compatible = "i2c-gpio";
+				gpios = <&gpio1 25 0 /* sda */
+						&gpio1 26 0 /* scl */
+						>;			
+				i2c-gpio,scl-output-only;
+				i2c-gpio,delay-us = <2>;	/* ~100 kHz */
+				#address-cells = <1>;
+				#size-cells = <0>;
 
-			ddm@a0 {
-				compatible = "DDMA0";
-				reg = <0xa0>;
+				ddm@50 {
+					compatible = "DDMA0";
+					reg = <0x50>;
+				};
+				ddm@51 {
+					compatible = "DDMA2";
+					reg = <0x51>;
+				};
 			};
-			ddm@a2 {
-				compatible = "DDMA2";
-				reg = <0xa2>;
+
+		i2c@5{
+				compatible = "i2c-gpio";
+				gpios = <&gpio1 28 0 /* sda */
+						&gpio1 30 0 /* scl */
+						>;			
+				i2c-gpio,scl-output-only;
+				i2c-gpio,delay-us = <2>;	/* ~100 kHz */
+				#address-cells = <1>;
+				#size-cells = <0>;
+
+				ddm@50 {
+					compatible = "DDMA0";
+					reg = <0x50>;
+				};
+				ddm@51 {
+					compatible = "DDMA2";
+					reg = <0x51>;
+				};
 			};
-		};
 
 		duart0: serial@21c0500 {
 			compatible = "fsl,ns16550", "ns16550a";
