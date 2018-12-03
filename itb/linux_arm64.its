@@ -41,7 +41,7 @@
 
 		ls1043ardb-dtb {
 			description = "ls1043ardb-dtb";
-			data = /incbin/("./fsl-ls1043a-rdb-sdk.dtb");
+			data = /incbin/("./linux-4.9.111/arch/arm64/boot/dts/freescale/fsl-ls1043a-rdb-sdk.dtb");
 			type = "flat_dt";
 			arch = "arm64";
 			os = "linux";
