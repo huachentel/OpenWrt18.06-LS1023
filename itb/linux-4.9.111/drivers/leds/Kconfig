@@ -100,6 +100,9 @@ config LEDS_LM3642
 	  converter plus 1.5A constant current driver for a high-current
 	  white LED.
 
+config LEDS_EN1002_LED
+	tristate "LED support for ls1043 Chip HC1002 led"
+	depends on LEDS_CLASS	  
 
 config LEDS_LOCOMO
 	tristate "LED Support for Locomo device"
