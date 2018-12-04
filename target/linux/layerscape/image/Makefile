@@ -16,6 +16,11 @@ define Build/append-ls-uboot
 	dd if=$(STAGING_DIR_IMAGE)/$(1)-$(SUBTARGET)-uboot.bin >> $@
 endef
 
+#modify by liji 增加对firmware的支持，而且仅此这一个
+define Build/append-ls-hcen1002-all
+	dd if=$(TOPDIR)/itb/firmware/firmware_ls1043ardb_uboot_sdboot.img >> $@
+endef
+
 define Build/append-ls-ppa
 	dd if=$(STAGING_DIR_IMAGE)/$(1)-ppa.itb >> $@
 endef
@@ -49,7 +54,7 @@ define Device/Default
   PROFILES = Default
   FILESYSTEMS := squashfs
   DEVICE_DTS :=
-  IMAGES = firmware.bin
+  IMAGES = firmware.bin sysupgrade.bin
 
 ifeq ($(SUBTARGET),armv8_64b)
   KERNEL := kernel-bin | gzip | uImage gzip
@@ -69,13 +74,17 @@ define Device/ls1043ardb
   DEVICE_PACKAGES +=	rcw-layerscape-ls1043ardb uboot-layerscape-$(SUBTARGET)-ls1043ardb \
 			fman-layerscape-ls1043ardb layerscape-ppa-ls1043ardb
   DEVICE_DTS = ../../../arm64/boot/dts/freescale/fsl-ls1043a-rdb-sdk
-  IMAGE/firmware.bin =	append-ls-rcw $(1) | pad-to 1M | \
-			append-ls-uboot $(1) | pad-to 4M | \
-			append-ls-ppa $(1) | pad-to 9M | \
-			append-ls-fman $(1) | pad-to 15M | \
-			append-ls-dtb $$(DEVICE_DTS) | pad-to 16M | \
-			append-kernel | pad-to 32M | \
-			append-rootfs | pad-rootfs | check-size 67108865
+#  IMAGE/firmware.bin =	append-ls-rcw $(1) | pad-to 1M | \
+#			append-ls-uboot $(1) | pad-to 4M | \
+#			append-ls-ppa $(1) | pad-to 9M | \
+#			append-ls-fman $(1) | pad-to 15M | \
+#			append-ls-dtb $$(DEVICE_DTS) | pad-to 16M | \
+#			append-kernel | pad-to 32M | \
+#			append-rootfs | pad-rootfs | check-size 67108865
+#modify by liji to support firmware
+  IMAGE/firmware.bin =	append-ls-hcen1002-all $(1) | pad-to 40M | check-size 67108865
+  IMAGE/sysupgrade.bin = append-kernel | pad-to 32M | \
+      append-rootfs | pad-rootfs | check-size 67108865
 endef
 TARGET_DEVICES += ls1043ardb
 
