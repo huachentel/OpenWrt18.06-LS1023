@@ -27,7 +27,7 @@
 
 		initrd {
 			description = "initrd for arm64";
-			data = /incbin/("./ramdisk_rootfs_arm64.ext4.gz");
+			data = /incbin/("./rootfs.squashfs");
 			type = "ramdisk";
 			arch = "arm64";
 			os = "linux";
