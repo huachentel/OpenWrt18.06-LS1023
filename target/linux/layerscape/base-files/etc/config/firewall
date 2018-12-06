@@ -1,0 +1,59 @@
+config defaults
+	option syn_flood	1
+	option input		ACCEPT
+	option output		ACCEPT
+	option forward		ACCEPT
+# Uncomment this line to disable ipv6 rules
+#	option disable_ipv6	1
+
+config zone
+	option name		lan
+	list   network		'lan'
+	option input		ACCEPT
+	option output		ACCEPT
+	option forward		ACCEPT
+
+config zone
+	option name		wan
+	list   network		'wan1'
+	list   network		'lte'
+	option input		REJECT
+	option output		ACCEPT
+	option forward		REJECT
+	option masq		1
+	option mtu_fix		1
+
+config zone
+	option name		hc
+	list   network		'hcsrc'
+	list   network		'hcdst'
+	option input		ACCEPT
+	option output		ACCEPT
+	option forward		ACCEPT
+
+config zone
+	option name		VPN
+	option input		ACCEPT
+	option output		ACCEPT
+	option forward		ACCEPT
+	option mtu_fix		1
+
+config rule
+	option name     MARK-HC-ICMP-MASTER
+	option src      VPN
+	option device      vti-master
+	option direction in
+	option src_ip   169.254.200.0/28
+	option proto    icmp
+	option target   MARK
+	option set_mark 82
+
+config rule
+	option name     MARK-HC-ICMP-SLAVE
+	option src      VPN
+	option device      vti-slave
+	option direction in
+	option src_ip   169.254.200.0/28
+	option proto    icmp
+	option target   MARK
+	option set_mark 82
