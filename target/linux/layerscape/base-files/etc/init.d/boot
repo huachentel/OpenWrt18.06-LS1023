@@ -48,6 +48,10 @@ boot() {
 	
 	# temporary hack until configd exists
 	/sbin/reload_config
-	# set LTE country
+	# set LTE country by liji
 	iw reg set CN
+	#add check update command by liji
+	/sbin/reset_gpio.sh &
+	/sbin/process_check.sh &
+	
 }
