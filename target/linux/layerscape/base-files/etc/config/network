@@ -18,13 +18,13 @@ config interface 'hcdst'
 
 config interface 'lan'
 	option type 'bridge'
-	option ifname 'eth0 wlan0'
+	option ifname 'iface3 wlan0'
 	option proto 'static'
 	option ipaddr '192.168.0.1'
 	option netmask '255.255.255.0'
 
 config interface 'wan1'
-	option ifname 'eth1'
+	option ifname 'iface0'
 	option proto 'dhcp'
 	option metric '50'
 
