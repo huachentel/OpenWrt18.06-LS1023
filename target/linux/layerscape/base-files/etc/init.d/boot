@@ -17,6 +17,14 @@ uci_apply_defaults() {
 	uci commit
 }
 
+set_interface_name(){
+	ip link set eth1 name iface0
+	ip link set eth2 name iface1
+	ip link set eth4 name iface2
+	ip link set eth0 name iface3
+	ip link set eth3 name iface4
+}
+
 check_update_etc(){
 	# add by liji to support 检查是否需要恢复配置
 	mkdir /recover && mount /dev/mmcblk0p3 /recover
@@ -31,10 +39,10 @@ check_update_etc(){
 
 set_led_status(){
 	echo 0 > /sys/class/leds/cloud/delay_on
-	echo 1000 > /sys/class/leds/cloud/delay_on
+	echo 1000 > /sys/class/leds/cloud/delay_off
 	
-	echo 1000 > echo 0 > /sys/class/leds/sys/delay_on
-	echo 1000 > echo 0 > /sys/class/leds/sys/delay_off
+	echo 1000 > /sys/class/leds/sys/delay_on
+	echo 1000 > /sys/class/leds/sys/delay_off
 }
 
 boot() {
@@ -68,13 +76,15 @@ boot() {
 	
 	# temporary hack until configd exists
 	/sbin/reload_config
-	# set LTE country by liji
+	# set wifi country by liji
 	iw reg set CN
 	
 	#检查是否需要恢复配置
 	check_update_etc
 	#重置led状态
 	set_led_status
+	#set name interface
+	set_interface_name
 	#add check update command by liji
 	/sbin/reset_gpio.sh &
 	/sbin/process_check.sh &
