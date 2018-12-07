@@ -22,10 +22,19 @@ check_update_etc(){
 	mkdir /recover && mount /dev/mmcblk0p3 /recover
 	if [  -f /recover/sys_etc_recover ] ; then
 		sysupgrade -r /recover/backup.tar.gz
-		rm /recover/sys_etc_recover && sync		
+		rm /recover/sys_etc_recover && sync	
+		reboot		
 	fi
 	
 	umount /recover && rm -rf /recover
+}
+
+set_led_status(){
+	echo 0 > /sys/class/leds/cloud/delay_on
+	echo 1000 > /sys/class/leds/cloud/delay_on
+	
+	echo 1000 > echo 0 > /sys/class/leds/sys/delay_on
+	echo 1000 > echo 0 > /sys/class/leds/sys/delay_off
 }
 
 boot() {
@@ -64,7 +73,8 @@ boot() {
 	
 	#检查是否需要恢复配置
 	check_update_etc
-	
+	#重置led状态
+	set_led_status
 	#add check update command by liji
 	/sbin/reset_gpio.sh &
 	/sbin/process_check.sh &

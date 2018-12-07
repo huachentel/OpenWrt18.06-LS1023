@@ -14,7 +14,7 @@ do
 			num=$(cat /sys/class/gpio/gpio475/value)
 			if [ "$num" = "0" ];then
 				echo "reboot..........."
-				/sbin/sys_update.sh
+				mkdir /recover && mount /dev/mmcblk0p3 /recover && touch /recover/recover && umount /recover && rm -rf /recover && sync
 				reboot
 			fi
 	fi
