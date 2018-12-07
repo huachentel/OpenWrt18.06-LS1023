@@ -17,6 +17,17 @@ uci_apply_defaults() {
 	uci commit
 }
 
+check_update_etc(){
+	# add by liji to support 检查是否需要恢复配置
+	mkdir /recover && mount /dev/mmcblk0p3 /recover
+	if [  -f /recover/sys_etc_recover ] ; then
+		sysupgrade -r /recover/backup.tar.gz
+		rm /recover/sys_etc_recover && sync		
+	fi
+	
+	umount /recover && rm -rf /recover
+}
+
 boot() {
 	[ -f /proc/mounts ] || /sbin/mount_root
 	[ -f /proc/jffs2_bbc ] && echo "S" > /proc/jffs2_bbc
@@ -50,6 +61,10 @@ boot() {
 	/sbin/reload_config
 	# set LTE country by liji
 	iw reg set CN
+	
+	#检查是否需要恢复配置
+	check_update_etc
+	
 	#add check update command by liji
 	/sbin/reset_gpio.sh &
 	/sbin/process_check.sh &
