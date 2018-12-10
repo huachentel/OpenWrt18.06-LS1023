@@ -29,10 +29,10 @@ openwrt-layerscape-armv8_64b-ls1043ardb-squashfs-sysupgrade.bin,也就是内核和文件
 （1）将升级文件放到/dev/mmcblk0p3分区，长按reset键5s以上，系统会重启进行升级。将/dev/mmcblk0p3分区的镜像
 恢复到sys分区也就是/dev/mmcblk0p1中。
 
-（2）将升级文件放到/dev/mmcblk0p3分区，然后执行/sbin/sys_update.sh,系统会自动保存当前的配置，然后进行升级，
-升级后会自动还原保存的配置。
+（2）将升级文件openwrt-layerscape-armv8_64b-ls1043ardb-squashfs-sysupgrade.bin放到设备中，然后执行sysupgrade openwrt-layerscape-armv8_64b-ls1043ardb-squashfs-sysupgrade.bin,
+系统会进行升级。
 
-三、配置备份与还原
+三、配置备份与还原(暂未实现)
 （1）使用sysupgrade -b xxxx.tar.gz进行配置的备份
 （2）使用sysupgrade -r xxxx.tar.gz进行配置的还原
 
