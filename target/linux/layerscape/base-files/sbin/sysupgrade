@@ -1,0 +1,10 @@
+#!/bin/sh
+
+mkdir /recover
+mount /dev/mmcblk0p3 /recover
+cp $1 /recover && sync
+touch /recover/recover && sync
+
+umount /recover && rm -rf /recover
+
+reboot

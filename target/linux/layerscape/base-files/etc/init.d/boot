@@ -80,7 +80,7 @@ boot() {
 	iw reg set CN
 	
 	#检查是否需要恢复配置
-	check_update_etc
+	#check_update_etc
 	#重置led状态
 	set_led_status
 	#set name interface
