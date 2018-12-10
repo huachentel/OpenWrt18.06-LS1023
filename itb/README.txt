@@ -35,3 +35,6 @@ openwrt-layerscape-armv8_64b-ls1043ardb-squashfs-sysupgrade.bin,也就是内核和文件
 三、配置备份与还原
 （1）使用sysupgrade -b xxxx.tar.gz进行配置的备份
 （2）使用sysupgrade -r xxxx.tar.gz进行配置的还原
+
+四、说明
+第一次更新完新的firmware之后最好执行第4节中的ramdisk紧急情况系统恢复，因为有可能系统分区此时没有系统。
