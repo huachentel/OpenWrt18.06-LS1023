@@ -3,8 +3,8 @@
 mkdir /recover
 mount /dev/mmcblk0p3 /recover
 cp $1 /recover && sync
-touch /recover/recover && sync
-
+touch /recover/recover && echo "$1" > /recover/recover && sync
+echo "starting recover....then reboot"
 umount /recover && rm -rf /recover
 
 reboot
