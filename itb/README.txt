@@ -1,3 +1,5 @@
+新的firmware支持指定参数升级，使用设备前先更新firmware.
+
 准备工作参考openwrt的README
 
 两个config文件，openwrt和内核的配置文件，linux.config和openwrt.config，分别在make menuconfig 和make kernel_menuconfig时使用。
@@ -17,7 +19,7 @@
 （2）在/dev/mmcblk0p3分区放入系统镜像，并创建空文件touch recover
 （3）重启，系统会自动进行还原
 
-5. 改进了firmware,位于itb/firmware目录，添加了对在线升级的底层支持
+5. 改进了firmware,位于itb/firmware目录，添加了对在线升级的底层支持，也支持了对指定bin文件的升级
 
 6. 重新对各网口命名使之对应面板编号，从iface0~iface4
 
