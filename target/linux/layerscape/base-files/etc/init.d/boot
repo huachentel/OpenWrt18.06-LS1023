@@ -86,7 +86,7 @@ boot() {
 	#set name interface
 	set_interface_name
 	#add check update command by liji
-	/sbin/reset_gpio.sh &
-	/sbin/process_check.sh &
+	#/sbin/reset_gpio.sh &
+	#/sbin/process_check.sh &
 	
 }

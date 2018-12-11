@@ -1,0 +1,3 @@
+#!/bin/sh
+
+logger the button was $BUTTON and the action was $ACTION
