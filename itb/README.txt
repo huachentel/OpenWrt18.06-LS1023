@@ -16,7 +16,7 @@
 	setenv bootargs "console=ttyS0,115200 root=/dev/ram0 earlycon=uart8250,mmio,0x21c0500"
 	setenv bootcmd "run distro_bootcmd; run sd_bootcmd; env exists secureboot && esbc_halt"
 	boot
-（2）在/dev/mmcblk0p3分区放入系统镜像，并创建空文件touch recover
+（2）在/dev/mmcblk0p3分区放入系统镜像，并创建空文件touch recover,然后把需要更新的bin文件名字 xxx.bin写入到recover里面。
 （3）重启，系统会自动进行还原
 
 5. 改进了firmware,位于itb/firmware目录，添加了对在线升级的底层支持，也支持了对指定bin文件的升级
