@@ -595,7 +595,19 @@
 			interrupt-controller;
 			#interrupt-cells = <2>;
 		};
-
+/*
+		gpio-keys-polled {
+			compatible = "gpio-keys-polled";
+			#address-cells = <1>;
+			#size-cells = <0>;
+			poll-interval = <20>;
+			reset {
+				label = "reset";
+				gpios = <&gpio2 27 1>;
+				linux,code = <0x198>;
+			};
+		}; 
+*/
 		uqe: uqe@2400000 {
 			#address-cells = <1>;
 			#size-cells = <1>;

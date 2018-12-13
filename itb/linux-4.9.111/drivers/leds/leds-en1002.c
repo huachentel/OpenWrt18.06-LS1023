@@ -90,6 +90,8 @@ static struct gpio_led gpio_leds[] = {
         .default_state = LEDS_GPIO_DEFSTATE_ON, 
         .active_low = 0,          
     },
+    
+/*
     {
         .name = "wifi_pwr_5g",		
         .gpio = WIFI_PWR_EN,
@@ -102,12 +104,14 @@ static struct gpio_led gpio_leds[] = {
         .default_state = LEDS_GPIO_DEFSTATE_ON, 
         .active_low = 0,          
     },
+*/
     {
         .name = "wifi_5g",		
         .gpio = LED_WIFI_5G,
         .default_state = LEDS_GPIO_DEFSTATE_ON, 
         .active_low = 0,          
     },
+
    	{
         .name = "wifi_2.4g",		
         .gpio = LED_WIFI_24G,
