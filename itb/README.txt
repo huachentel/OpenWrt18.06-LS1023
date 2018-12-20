@@ -76,8 +76,8 @@
 	MMC write: dev # 0, block # 8, count 131064 ... 131064 blocks written: OK
 	resetting ...
 至此，设备会重启，更新结束。
-新改动的firmware支持sysupgrade xxx.tar.gz和 sysupgrade xxx.bin两个格式。如果一开始分区1里没用文件系统，只需要
-进入ramdisk中，在分区3建立一个recover的文件，将要升级的文件系统的名字（带扩展民不过）写入。重启系统会自动检测
+新改动的firmware支持sysupgrade xxx.tar.gz和 sysupgrade xxx.bin两个格式。如果一开始分区1里没有文件系统，只需要
+进入ramdisk中，在分区3建立一个recover的文件，将要升级的文件系统的名字（带扩展名）写入。重启系统会自动检测
 当前要升级的文件，来完成升级。升级后会自动重启到升级后的文件系统中。
 
 
