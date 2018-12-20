@@ -11,14 +11,24 @@
 	FM1@DTSEC2, FM1@DTSEC3 [PRIME], FM1@DTSEC4, FM1@DTSEC5, FM1@DTSEC9
 	Hit any key to stop autoboot:  0 
 	=>
-2.  设置设备ip跟tftp服务器同一网段或者相通。
+2.  （1）从tftp服务器更新
+	设置设备ip跟tftp服务器同一网段或者相通。
 	=> run update_firmware <INTERRUPT>
 	=> setenv ipaddr 192.168.172.123
 	=> setenv serverip 192.168.172.79 
 	=> ping $serverip
 	Using FM1@DTSEC3 device
 	host 192.168.172.79 is alive
-
+	（2）从u盘更新
+	可通过
+	=> usb start
+	=> ext2ls usb 0:1 
+	=> ext2ls usb 0:2 ...
+	来查看firmware存放在u盘的哪个区。
+	比如在0:1区：
+	=> ext2load usb 0:1 $load_addr firmware_ls1043ardb_uboot_sdboot.img
+	=> mmc write $load_addr 8 1fff8
+	=> reset
 3. 	执行run update_firmware来更新firmware.
 	=> run update_firmware 
 	update firmware for ls1043 board form tftp......
