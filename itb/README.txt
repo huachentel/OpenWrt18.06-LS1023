@@ -19,7 +19,7 @@
 	=> ping $serverip
 	Using FM1@DTSEC3 device
 	host 192.168.172.79 is alive
-	（2）从u盘更新
+	（2）从u盘更新,如果用u盘，忽略3
 	可通过
 	=> usb start
 	=> ext2ls usb 0:1 
@@ -29,7 +29,7 @@
 	=> ext2load usb 0:1 $load_addr firmware_ls1043ardb_uboot_sdboot.img
 	=> mmc write $load_addr 8 1fff8
 	=> reset
-3. 	执行run update_firmware来更新firmware.
+3. 	（仅当使用tftp更新才有用）执行run update_firmware来更新firmware.
 	=> run update_firmware 
 	update firmware for ls1043 board form tftp......
 	Using FM1@DTSEC3 device
