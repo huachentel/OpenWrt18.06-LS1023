@@ -44,12 +44,10 @@
 #define WIFI_PWR_EN		GPIO_EN1002(GPIO1_NUM, 22)
 #define WIFI_PWR_USB_EN		GPIO_EN1002(GPIO1_NUM, 18)
 
-#define CLOUD_LED		GPIO_EN1002(GPIO1_NUM, 16)
-
 #define GPIO_RST		GPIO_EN1002(GPIO2_NUM, 27)
 
 #define LED_WIFI_5G		GPIO_EN1002(GPIO4_NUM, 10)
-#define LED_WIFI_24G	GPIO_EN1002(GPIO4_NUM, 11)
+#define CLOUD_LED	GPIO_EN1002(GPIO4_NUM, 11)
 
 static struct gpio_led gpio_leds[] = {
     {
@@ -111,14 +109,14 @@ static struct gpio_led gpio_leds[] = {
         .default_state = LEDS_GPIO_DEFSTATE_ON, 
         .active_low = 0,          
     },
-
+/*
    	{
         .name = "wifi_2.4g",		
         .gpio = LED_WIFI_24G,
         .default_state = LEDS_GPIO_DEFSTATE_ON, 
         .active_low = 0,          
     },
-    
+*/ 
 };
 
  
