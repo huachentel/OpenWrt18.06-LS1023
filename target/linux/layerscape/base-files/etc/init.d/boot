@@ -43,6 +43,8 @@ set_led_status(){
 	
 	echo 1000 > /sys/class/leds/sys/delay_on
 	echo 1000 > /sys/class/leds/sys/delay_off
+
+	echo 0 > /sys/class/leds/wifi_5g/brightness
 }
 
 boot() {
@@ -88,5 +90,6 @@ boot() {
 	#add check update command by liji
 	#/sbin/reset_gpio.sh &
 	#/sbin/process_check.sh &
-	
+	#wifi_led
+	/sbin/wlan_watch.sh &	
 }
