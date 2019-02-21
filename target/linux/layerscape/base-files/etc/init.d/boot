@@ -91,5 +91,5 @@ boot() {
 	#/sbin/reset_gpio.sh &
 	#/sbin/process_check.sh &
 	#wifi_led
-	/sbin/wlan_watch.sh &	
+	chmod +x /sbin/wlan_watch.sh && /sbin/wlan_watch.sh &
 }
